@@ -6,6 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -20,7 +21,9 @@ public class StoreDisplayController implements Initializable {
     @FXML
     private TextField PriceField;
     @FXML
-    private TextField ItemTypeChoice;
+    private TextField ItemTypeField;
+    @FXML
+    private ChoiceBox ItemTypeChoice;
     @FXML
     private ListView<merchandiseItem> ListControl;
     private merchandiseItem List;
@@ -38,7 +41,7 @@ public class StoreDisplayController implements Initializable {
                     public void changed(ObservableValue<? extends merchandiseItem> observableValue, merchandiseItem merchandiseItem, merchandiseItem t1) {
                         NameField.setText(t1.getName());
                         PriceField.setText(t1.getPrice());
-                        ItemTypeChoice.setText(t1.getType());
+                        ItemTypeField.setText(t1.getType());
                     }
                 });
     }
