@@ -28,7 +28,7 @@
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
                               <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="152.0" text="Item Type" />
-                              <TextField fx:id="ItemTypeField" editable="false" prefHeight="43.0" prefWidth="269.0" />
+                              <ChoiceBox fx:id="ItemTypeChoice" prefWidth="150.0" />
                            </children>
                         </HBox>
                         <HBox prefHeight="147.0" prefWidth="326.0">

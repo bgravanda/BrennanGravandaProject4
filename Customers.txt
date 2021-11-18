@@ -1,0 +1,3 @@
+Dave,1000,TaxExemptCustomer
+Ben,1001,ResidentialCustomer
+Josh,1002,BusinessCustomer

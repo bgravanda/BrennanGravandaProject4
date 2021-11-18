@@ -1,0 +1,4 @@
+Pants,Clothing,15.99
+Shirts,Clothing,19.99
+Toys,GeneralMerchandise,12.99
+Food,WICFood,11.50
