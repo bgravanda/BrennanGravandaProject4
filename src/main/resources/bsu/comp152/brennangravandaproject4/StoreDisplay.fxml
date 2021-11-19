@@ -16,13 +16,13 @@
                         <HBox prefHeight="70.0" prefWidth="426.0">
                            <children>
                               <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="175.0" text="New Item Name:" />
-                              <TextField fx:id="NameField" editable="false" prefHeight="40.0" prefWidth="317.0" />
+                              <TextField fx:id="NameField" prefHeight="40.0" prefWidth="317.0" />
                            </children>
                         </HBox>
                         <HBox prefHeight="82.0" prefWidth="426.0">
                            <children>
                               <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="147.0" text="Item Price:" />
-                              <TextField fx:id="PriceField" editable="false" prefHeight="39.0" prefWidth="276.0" />
+                              <TextField fx:id="PriceField" prefHeight="39.0" prefWidth="276.0" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
@@ -34,11 +34,11 @@
                         </HBox>
                         <HBox prefHeight="147.0" prefWidth="326.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="146.0" prefWidth="208.0" text="Add">
+                              <Button mnemonicParsing="false" onAction="#onAddButtonClicked" prefHeight="146.0" prefWidth="208.0" text="Add">
                                  <font>
                                     <Font size="24.0" />
                                  </font></Button>
-                              <Button mnemonicParsing="false" prefHeight="146.0" prefWidth="218.0" text="Save">
+                              <Button mnemonicParsing="false" onAction="#onSaveButtonClicked" prefHeight="146.0" prefWidth="218.0" text="Save">
                                  <font>
                                     <Font size="24.0" />
                                  </font></Button>

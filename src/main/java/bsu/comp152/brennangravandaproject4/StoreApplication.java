@@ -20,6 +20,7 @@ public class StoreApplication extends Application {
         stage.setTitle("Showing Store");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {

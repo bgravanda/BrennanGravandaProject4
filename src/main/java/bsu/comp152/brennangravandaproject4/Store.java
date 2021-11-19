@@ -66,6 +66,9 @@ public class Store {
         }
 
     }
+    public ArrayList<merchandiseItem>getAllItems(){
+        return allItems;
+    }
 //Gives the customer a menu
     public void runStore() {
         var menuReader = new Scanner(System.in);
