@@ -48,7 +48,7 @@ public class StoreDisplayController implements Initializable {
         double itemPrice2 = Double.parseDouble(itemPrice);
         ItemType itemType2 = ItemType.valueOf(itemType);
         var newItem = new merchandiseItem(itemName,itemPrice2,itemType2);
-        ListControl.(newItem);
+        ListControl.add(newItem);
 
     }
     public void setItemTypeChoice(){
