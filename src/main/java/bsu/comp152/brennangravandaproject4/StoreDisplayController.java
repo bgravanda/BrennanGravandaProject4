@@ -31,13 +31,14 @@ public class StoreDisplayController implements Initializable {
     private String name;
     private double price;
     private ItemType items;
+    private ObservableList<merchandiseItem>OList;
 
     public void LoadList()throws IOException {   //Loads the merchandise items into an observable list
         var StoreItems = new Store();
         var itemsInList = StoreItems.getAllItems();
         List = new merchandiseItem(name,price,items);
-        ObservableList<merchandiseItem> ItemList = FXCollections.observableArrayList(itemsInList);
-        ListControl.setItems(ItemList);
+        OList= FXCollections.observableArrayList(itemsInList);
+        ListControl.setItems(OList);
 
     }
     public void onAddButtonClicked(){  //Adds new Item to list
@@ -48,7 +49,7 @@ public class StoreDisplayController implements Initializable {
         double itemPrice2 = Double.parseDouble(itemPrice);
         ItemType itemType2 = ItemType.valueOf(itemType);
         var newItem = new merchandiseItem(itemName,itemPrice2,itemType2);
-        ListControl.add(newItem);
+        OList.add(newItem);
 
     }
     public void setItemTypeChoice(){

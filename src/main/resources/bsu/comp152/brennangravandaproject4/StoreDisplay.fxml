@@ -28,8 +28,12 @@
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
                               <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="152.0" text="Item Type" />
-                              <TextField fx:id="ItemTypeField" />
-                              <ChoiceBox fx:id="ItemTypeChoice" prefWidth="150.0" />
+                              <VBox prefHeight="100.0" prefWidth="274.0">
+                                 <children>
+                                    <TextField fx:id="ItemTypeField" prefHeight="40.0" prefWidth="274.0" />
+                                    <Label prefHeight="57.0" prefWidth="274.0" text="Enter in:WICFood, GeneralMerchandise, Clothing " />
+                                 </children>
+                              </VBox>
                            </children>
                         </HBox>
                         <HBox prefHeight="147.0" prefWidth="326.0">
