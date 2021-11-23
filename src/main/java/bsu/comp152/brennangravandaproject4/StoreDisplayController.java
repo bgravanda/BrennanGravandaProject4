@@ -48,15 +48,9 @@ public class StoreDisplayController implements Initializable {
         var itemType = ItemTypeField.getText();
         double itemPrice2 = Double.parseDouble(itemPrice);
         ItemType itemType2 = ItemType.valueOf(itemType);
-        var newItem = new merchandiseItem(itemName,itemPrice2,itemType2);
+        var newItem = new merchandiseItem(itemName,itemPrice2,itemType2);//adds the new item to the OList
         OList.add(newItem);
 
-    }
-    public void setItemTypeChoice(){
-        ChoiceBox ItemTypeChoice = new ChoiceBox<>();
-        ItemTypeChoice.getItems().add("General Merchandise");
-        ItemTypeChoice.getItems().add("WIC Food");
-        ItemTypeChoice.getItems().add("Clothing");
     }
     public void onSaveButtonClicked(){  //saves the edits to the items
 
